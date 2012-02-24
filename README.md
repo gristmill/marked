@@ -3,7 +3,7 @@ Sinatra application for sharing markdown. Add your markdown, save it, share it. 
 
 ## Installing
 
-```
+```bash
 git clone git@github.com:gristmill/grst.git
 cd grst
 bundle
