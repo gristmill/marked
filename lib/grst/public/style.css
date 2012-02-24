@@ -1,0 +1,26 @@
+body {
+  background:url("background.png");
+  margin-top:3em;
+}
+
+header {
+  margin:0 0 5em 0;
+}
+
+h1.jumbo {
+  font-size:8em;
+}
+
+h1.jumbo span.it {
+  color:rgb(20, 173, 224);
+}
+
+textarea {
+  width:100%;
+  height:400px;
+  resize:none;
+}
+
+div.well {
+  background:white;
+}
