@@ -1,7 +1,9 @@
+require "cgi"
+
 module Markdown
   class HTMLForTwitterBootstrap < Redcarpet::Render::HTML
     def block_code(code, language)
-      "<pre class='prettyprint linenums'>#{code}</pre>"
+      "<pre class='prettyprint linenums'>#{CGI::escapeHTML(code)}</pre>"
     end
   end
 
