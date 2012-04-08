@@ -8,6 +8,6 @@ MongoMapper.connection = Mongo::Connection.new("staff.mongohq.com", 10082, :pool
 MongoMapper.database   = "grst"
 MongoMapper.database.authenticate(ENV["MONGO_USERNAME"], ENV["MONGO_PASSWORD"])
 
-require "grst/app"
-require "grst/document"
-require "grst/markdown"
+require "marked/app"
+require "marked/document"
+require "marked/markdown"
