@@ -13,4 +13,8 @@ class App < Sinatra::Base
     @document = Document.create(params[:document])
     redirect "/#{@document.id}"
   end
+
+  post  "/preview" do
+    Markdown::render(params[:document])
+  end
 end

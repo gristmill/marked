@@ -1,5 +1,3 @@
-require "cgi"
-
 module Markdown
   class HTMLForTwitterBootstrap < Redcarpet::Render::HTML
     def block_code(code, language)

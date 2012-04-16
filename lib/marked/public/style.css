@@ -8,7 +8,7 @@ header {
   margin:2em 0 2em 0;
 }
 
-h1 {
+header h1 {
   font-family:'Lato', Helvetica, sans-serif;
   text-transform:uppercase;
   font-weight:100;
@@ -21,7 +21,7 @@ h1 img {
 
 textarea {
   width:940px;
-  height:75%;
+  height:72%;
   position:fixed;
   resize:none;
   border:none;
@@ -32,6 +32,21 @@ textarea {
   font-weight:400;
 }
 
+div.preview {
+  position:fixed;
+  right:0;
+  top:0;
+  background:#fff;
+  height:88%;
+  overflow:auto;
+  width:30%;
+  padding:20px;
+  border-left:solid 1px #f2f2f2;
+  display:none;
+}
+
+div.preview img { width:100%; }
+
 div.bar {
   background:#fff;
   border-top:solid 1px #f2f2f2;
@@ -41,15 +56,17 @@ div.bar {
   line-height:70px;
   height:70px;
   width:100%;
+  z-index:100;
   display:none;
 }
 
-input[type="submit"] {
+div.bar input[type="submit"], div.bar a.btn {
   background:#000;
   color:#fff;
   padding:10px;
   border:none;
   border-radius:4px;
+  font-size:14px;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#f2f2f2; }
