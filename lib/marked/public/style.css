@@ -1,6 +1,5 @@
 body {
   font-family:'Lato', Helvetica, sans-serif;
-  margin:0;
 }
 
 a { color:#333; }
@@ -16,7 +15,6 @@ header h1 {
   font-family:'Lato', Helvetica, sans-serif;
   text-transform:uppercase;
   font-weight:100;
-  padding:10px 0 20px 10px;
 }
 
 h1 img {
@@ -25,10 +23,11 @@ h1 img {
 }
 
 div.input {
-  position: absolute;
-  left:10px;
+  position:fixed;
+  width:940px;
+  left:auto;
   top:60px;
-  right:5px;
+  right:auto;
   bottom:5px;
 }
 
@@ -42,17 +41,18 @@ textarea {
 }
 
 div.preview {
-  position:fixed;
-  right:0;
-  top:0;
   background:#fff;
-  height:88%;
-  overflow:auto;
-  width:30%;
-  padding:20px;
-  border-left:solid 1px #f2f2f2;
+  position:fixed;
+  left:auto;
+  right:auto;
+  top:60px;
+  background:#fff;
+  height:100%;
+  width:940px;
+  border-bottom:solid 1px #f2f2f2;
   display:none;
   z-index:2;
+  overflow:scroll;
 }
 
 div.preview img { width:100%; }
@@ -78,6 +78,8 @@ div.bar input[type="submit"], div.bar a.btn {
   border-radius:4px;
   font-size:14px;
 }
+
+div.bar input[type="submit"].active, div.bar a.btn.active { background:#c9403a; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#f2f2f2; }
 input:-moz-placeholder, textarea:-moz-placeholder { color: #f2f2f2; }
