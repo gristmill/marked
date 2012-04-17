@@ -5,7 +5,7 @@ Sinatra application for sharing markdown. Add your markdown, save it, share it. 
 
 ```bash
 git clone git@github.com:gristmill/marked.git
-cd grst
+cd marked
 bundle
 ```
 
