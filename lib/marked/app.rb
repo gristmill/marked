@@ -3,6 +3,12 @@ class App < Sinatra::Base
     erb :index
   end
 
+  get "/preview" do
+    @document = params[:document][:contents]
+
+    erb :show
+  end
+
   get "/:id" do
     @document = Document.find(params[:id]) || halt(404)
 
@@ -12,9 +18,5 @@ class App < Sinatra::Base
   post "/documents" do
     @document = Document.create(params[:document])
     redirect "/#{@document.id}"
-  end
-
-  post  "/preview" do
-    Markdown::render(params[:document])
   end
 end

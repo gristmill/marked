@@ -41,26 +41,9 @@ textarea {
   outline:none;
   resize:none;
   font-family:'Lato', Helvetica, sans-serif;
-  line-height:1.8em;
+  line-height:1.3em;
   font-size:16px;
 }
-
-div.preview {
-  background:#fff;
-  position:fixed;
-  left:auto;
-  right:auto;
-  top:60px;
-  background:#fff;
-  height:100%;
-  width:940px;
-  border-bottom:solid 1px #f2f2f2;
-  display:none;
-  z-index:2;
-  overflow:scroll;
-}
-
-div.preview img { width:100%; }
 
 div.bar {
   background:#fff;
@@ -84,14 +67,12 @@ div.bar input[type="submit"], div.bar a.btn {
   font-size:14px;
 }
 
-div.bar input[type="submit"].active, div.bar a.btn.active { background:#c9403a; }
-
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#f2f2f2; }
 input:-moz-placeholder, textarea:-moz-placeholder { color:#f2f2f2; }
 
 p {
   font-family:'Lato', Helvetica, sans-serif;
-  line-height:1.8em;
+  line-height:1.3em;
   font-size:16px;
 }
 
