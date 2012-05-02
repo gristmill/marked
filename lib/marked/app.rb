@@ -6,7 +6,13 @@ class App < Sinatra::Base
   get "/preview" do
     @document = params[:document][:contents]
 
-    erb :show
+    erb :preview
+  end
+
+  get "/:id/raw" do
+    @document = Document.find(params[:id]) || halt(404)
+
+    halt 200, {'Content-Type' => 'text/plain'}, @document.contents
   end
 
   get "/:id" do

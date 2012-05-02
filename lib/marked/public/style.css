@@ -76,6 +76,12 @@ p {
   font-size:16px;
 }
 
+div.links {
+  text-align:right;
+  margin-bottom:10px;
+  font-size:10px;
+}
+
 div.credit {
   line-height:70px;
   opacity:.2;
